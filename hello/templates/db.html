@@ -4,14 +4,15 @@
 {% block content %}
   <div class="container">
 
+<h1> Hello, {{ current_greeting.noun }}! </h1>
 
-<h2>Page View Report</h2>
+<h2>Previous Greetings</h2>
 
 
 <ul>
 
 {% for greeting in greetings %}
-    <li>{{ greeting.when }}</li>
+    <li>Greeted {{greeting.noun }} at {{ greeting.when }}! Come back soon!</li>
 {% endfor %}
 
 </ul>
